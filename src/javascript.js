@@ -81,7 +81,57 @@ JavaScript is caseSensitive
  it will take the value which is Submitted by the user 
  it will return as the string from input box or prompt or anything
 
- 
+
+converting the string to number ==> parseInt(s)
+parseInt will give u pure number
+
+In Es6 Number is new way to conveting to number
+
+
+//// string operations
+
+These methods are useful for extracting the string from a larger one 
+
+///Sub string
+it is a subset of another string.
+String.substring(index A, index B), end index is optinal
+
+
+Slice --- it will remove the first element in the string
+
+var city = 'Delhi'
+city.slice(1)
+elhi
+
+city.slice(1,4)
+elh
+
+slice and substring gives the same result
+slice(start,end?)
+substring(start,end?)
+substr(start,length?)
+
+////////// negative operations on strings
+
+var city = 'Delhi'
+city.slice(-1) // gives the last character
+i
+
+/////////// repalcing the strings
+
+var str = 'this is a javascript'
+
+str.replace(/a/,'js')
+"this is js javascript"
+
+str.replace(/a/g,'js')
+"this is js jjsvjsscript"
+
+str.replace(/ /g,'')
+"thisisajavascript"
+
+
+
 
 
 
