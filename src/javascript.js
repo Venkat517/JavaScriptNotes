@@ -130,6 +130,29 @@ str.replace(/a/g,'js')
 str.replace(/ /g,'')
 "thisisajavascript"
 
+//////Math operations////
+
+Math.floor(Math.random()*100000)
+42966
+Math.floor(Math.random()*100000)
+71896
+Math.floor(Math.random()*100000)
+10929
+Math.floor(Math.random()*100000)
+84286
+
+multiple no of zeros for getting the random number with digits 
+
+floor is on lower side
+ceil is on lower side
+round is on higher side
+
+// generating the random number between the range
+
+Math.floor(Math.random()*(max-min))+min
+
+
+
 
 
 
