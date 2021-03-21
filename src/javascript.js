@@ -28,7 +28,8 @@ modules of smaller to larger is always smaller
 
 6%7 = 6
 
-if we add + with string it with Concate 
+if we add + with string it with Concate
+
 String + string = String
 number + number = number
 string + number = string
@@ -151,11 +152,49 @@ round is on higher side
 
 Math.floor(Math.random()*(max-min))+min
 
+///lodcal strorage & session storage & cookies
+
+localStorage - it is a persistant Storage(we need to remove manually)
+
+localStorage.setItem('_ID','314424')
+undefined
+localStorage.getItem('_ID')
+"314424"
+localStorage.removeItem('_ID')
+undefined
+
+//// SessionStorage
+
+sessionStorage - It is non persistant Storage(tab specifc)
+
+sessionStorage.setItem('_SAFJOFA', '32452143');
+undefined
+sessionStorage.getItem('_SAFJOFA');
+"32452143"
+sessionStorage.removetItem('_SAFJOFA');
+undefined
+
+///Cookies
+it is saved bases on web URL, It is dedicated only to that particular link
+it has exipry Time
 
 
+document.cookie="name=value"
 
+/// string literals
 
+var name = 'Avenger';
+var rating = 3.5
+var type = 'Action';
+var region = 'Hollywood'
 
+//ES5
+
+var data = "This movie name is "+ name +" has a rating of "+rating+" and belongs to "+type+" "
+
+//ES6
+
+var data = `the movie name is ${name} has a rating od ${rating} and belongs to ${region}`
 
 
 
