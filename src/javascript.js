@@ -196,7 +196,36 @@ var data = "This movie name is "+ name +" has a rating of "+rating+" and belongs
 
 var data = `the movie name is ${name} has a rating od ${rating} and belongs to ${region}`
 
+////If condition
+
+if(conditon){
+    //logic
+}else{
+    //logic
+}
+
+var a = 46324524551
+if(a%2==0) {
+    console.log(`${a} is an even number);
+}else{
+    alert(${a} is an odd number`);
+}
+
+////Ternary operator
+> Its a single line if else condition
+
+a= 10
+a=10 ? a : b
+
+var y =9
+y>10? y+1 : y-1
+8
+
+//// truthy and falsy
+
+truthy = true & 1 which is either positive or negative, except 0
+
+falsy = false & 0 , null, undefined
 
 
- 
 
