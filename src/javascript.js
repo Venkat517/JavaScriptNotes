@@ -228,4 +228,74 @@ truthy = true & 1 which is either positive or negative, except 0
 falsy = false & 0 , null, undefined
 
 
+/// date in javascript
+Date()
+"Mon Mar 22 2021 21:34:45 GMT+0530 (India Standard Time)"
+let a = Date()
+
+a.substr(0,15)
+"Mon Mar 22 2021"
+a.substr(16,8)
+"21:35:00"
+
+var b = new Date()
+b.getDate()
+22
+b.getFullYear()
+2021
+b.getTime()
+1616429417902
+
+sunday is 0 
+january is 0
+
+////Switch 
+
+var name = 'Sandeep'
+undefined
+switch(name){
+    case 'Sandeep':
+        console.log('You are a user');
+        break;
+    case 'Deepu':
+        console.log('You are an Admin');
+        break;
+    default :
+        console.log('You dont have any privilages');
+}
+You are a user
+undefined
+var name = 'adad'
+undefined
+switch(name){
+    case 'Sandeep':
+        console.log('You are a user');
+        break;
+    case 'Deepu':
+        console.log('You are an Admin');
+        break;
+    default :
+        console.log('You dont have any privilages');
+}
+You dont have any privilages
+
+
+if we don't specify break, it will pirnt the true conditon and below one's too
+
+
+// number is odd or even using the swith case
+
+var num = 3.2;
+
+switch(num%2) {
+    case 0: 
+        console.log('number is even');
+        break;
+    case 1:
+        console.log('number is odd');
+        break;
+    default:
+        console.log('number is neither even nor odd')
+}
+
 
