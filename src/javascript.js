@@ -321,6 +321,68 @@ t.match("^([a-z]{2})$")
 It should start with number and rest any thing else
 data.match("^([1-9]+)([a-zA-Z]+)$")
 
+/////Arrays
 
+It is a collection of homogenous data
+
+var a = ['a','23','daad']
+var b = [1,3,4,5,3]
+var c = [true,false,true]
+
+But in JavaScript and python
+
+It is a collection of homogenous and hetrogenous
+
+var d = ['exmaple',23,false];
+
+var city = ['Delhi','Hyderabad','Mumbai']
+
+typeof(city) is an object
+object
+
+var city = ['Delhi','Texas','Newyork']
+undefined
+typeof(city)
+"object"
+city.length
+3
+city[2]
+"Newyork"
+
+city[city.length-1]
+"Newyork"
+
+city.push('SanJose')
+4
+city
+(4) ["Delhi", "Texas", "Newyork", "SanJose"]
+city.push('extra')
+5
+city
+(5) ["Delhi", "Texas", "Newyork", "SanJose", "extra"]
+city.pop()
+"extra"
+city
+(4) ["Delhi", "Texas", "Newyork", "SanJose"]
+
+pop(3) - pop with any index value is not counted, it only removes lst element
+
+pop will remove at beigning
+push will add at end
+unshift will add at beigning
+shift will remove always from beigning
+
+city.unshift('one')
+5
+city
+(5) ["one", "Delhi", "Texas", "Newyork", "SanJose"]
+city.unshift()
+5
+city
+(5) ["one", "Delhi", "Texas", "Newyork", "SanJose"]
+city.unshift('two')
+6
+city
+(6) ["two", "one", "Delhi", "Texas", "Newyork", "SanJose"]
 
 
