@@ -298,4 +298,29 @@ switch(num%2) {
         console.log('number is neither even nor odd')
 }
 
+// Regular expression
+
+-It is use to match the pattern 
+ starts with ^ and ends with $ (^$)
+
+("^([a-z])$")
+var t = 'r'
+t.match("^([a-zA-Z0-9])$")
+
+t.match("^([a-z]{2})$")
+(2) ["r", "r", index: 0, input: "r", groups: undefined]
+
+[] - It matches the pattern for the first Character 
+
+{1} - It matches the first CharacterData
+
+{2,4} - min 2 and max 4
+
++ - It matches for any length
+
+It should start with number and rest any thing else
+data.match("^([1-9]+)([a-zA-Z]+)$")
+
+
+
 
