@@ -506,3 +506,71 @@ let > we cannot able to redeclare and can reassign
 const > we cannot redeclare and reassign
 
 
+////clouser ///
+
+clouser is something where we can close or restrict the scope
+
+var a =10;  //global scope
+
+function add() {
+  var b=20; // local scope
+  return a+b;
+}
+console.log("ADD", add());
+console.log("value of a", a);
+console.log("value of b", b);
+
+o/p
+"ADD"
+30
+"value of a"
+10
+"error"
+"ReferenceError: b is not defined
+
+
+{} will consider as clouser only in the functions but not in loops.
+
+var a =10;
+
+for (i=0; i<10; i++) {
+  var b=20;
+  console.log(a+b+i);
+}
+
+console.log("value of a", a);
+console.log("value of b", b);
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+"value of a"
+10
+"value of b"
+20
+
+let helps to restrict the scope...
+
+///// hoisting ////
+
+we can call the function even before the declaration
+
+
+var a
+undefined
+
+typeof(a)
+undefined
+
+var b = null
+typeof(b)
+object
+
+
