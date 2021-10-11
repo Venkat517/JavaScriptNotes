@@ -498,3 +498,11 @@ a.map((data) => { return data*2 })
 var a=[0,1,2,3]
 a.filter((data) => { return data*2 })
 (3) [1, 2, 3]
+
+//////let & var 
+
+var > we can able to redeclare and reassign
+let > we cannot able to redeclare and can reassign
+const > we cannot redeclare and reassign
+
+
