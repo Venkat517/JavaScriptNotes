@@ -426,7 +426,7 @@ function * alpha(x) {
 
 var date = alpha(4)
 
-data.next()
+data.next() // it will load the data when in need
 {value: 0, done: false}done: falsevalue: 0[[Prototype]]: Object
 data.next()
 {value: 1, done: false}
@@ -439,5 +439,62 @@ data.next()
 data.next()
 {value: undefined, done: true}
 
+/////////////// Map & Filter //////////////
+
+var a = [1,234,433,54,3,4,546,65,737,67,54,6,3634,364]
+undefined
+
+a.map((data) => {return data})
+(14) [1, 234, 433, 54, 3, 4, 546, 65, 737, 67, 54, 6, 3634, 364]
+
+let's multiply the input array by 2
+a.map((data) => {console.log(data*2)})
+(14) [1, 234, 433, 54, 3, 4, 546, 65, 737, 67, 54, 6, 3634, 364]
+
+VM589:1 2
+VM589:1 468
+VM589:1 866
+VM589:1 108
+VM589:1 6
+VM589:1 8
+VM589:1 1092
+VM589:1 130
+VM589:1 1474
+VM589:1 134
+VM589:1 108
+VM589:1 12
+VM589:1 7268
+VM589:1 728
 
 
+map will iterate and return the array...
+> it will always return the same length as input array
+> it is used to apply the logic as sum, multiply ..etc
+
+FILTER:
+
+it is use to filter the values from array.
+> it may or maynot retutn the same length as input array
+> it only returns those value which ouptut is true
+
+var b=[5,11,3,6,8,23,24,15,22,13,10]
+b.filter((data) => {return data >10})
+(6) [11, 23, 24, 15, 22, 13]
+0: 11
+1: 23
+2: 24
+3: 15
+4: 22
+5: 13
+
+b.map((data) => {return data >10})
+(11) [false, true, false, false, false, true, true, true, true, true, false]
+
+tricky q
+var a=[0,1,2,3]
+a.map((data) => { return data*2 })
+(4) [0, 2, 4, 6]
+
+var a=[0,1,2,3]
+a.filter((data) => { return data*2 })
+(3) [1, 2, 3]
