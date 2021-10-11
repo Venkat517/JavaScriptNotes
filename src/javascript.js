@@ -386,3 +386,58 @@ city
 (6) ["two", "one", "Delhi", "Texas", "Newyork", "SanJose"]
 
 
+//////////////functions//////////////////
+
+function greet() {
+  console.log('Normal function')
+}
+greet()
+
+o/p Normal function
+we need to call the function explictly to generate the output
+
+///IIFE//// Immediately invokable functions
+
+(function(){
+  console.log('calling IIFE')
+}())
+this function will be executed on the page load without calling explicitly
+
+////genarator function/////
+we will control the flow of the function output when to show the value
+
+//without control
+function random(userInput) {
+  for (i=0;i<userInput; i++)
+    console.log(i)
+}
+random(4)
+0
+1
+2
+3
+
+//with control
+function * alpha(x) {
+    for(i=0;i<x;i++){
+        yield i;
+    }
+}
+
+var date = alpha(4)
+
+data.next()
+{value: 0, done: false}done: falsevalue: 0[[Prototype]]: Object
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: 3, done: false}
+data.next()
+{value: 4, done: false}
+data.next()
+{value: undefined, done: true}
+
+
+
