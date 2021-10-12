@@ -574,3 +574,161 @@ typeof(b)
 object
 
 
+///////////////// Object ///////////////////
+
+Single object can have n number of properties
+
+var movies = {
+  name : 'avengers',
+  rating: 3.5,
+  lang: 'english'
+}
+
+undefined
+typeof(movies)
+'object'
+//// dot notation
+movies.name
+'avengers'
+movies.lang
+'english'
+movies.rating
+3.5
+movies.rating = 3.9
+3.9
+movies
+{name: 'avengers', rating: 3.9, lang: 'english'}
+///// bracket notation
+movies["lang"]
+'english'
+
+> we can access the properties
+> we can add a propety
+> we can modify the property
+> we can delete the property
+
+JSON - having multiple objects in a array
+> a way to reprsent the data
+> a key value pair of the data
+
+var movies = [
+  {
+  name : 'avengers',
+  rating: 3.5,
+  lang: 'english'
+},
+  {
+  name : 'teal',
+  rating: 3.5,
+  lang: 'english'
+},
+  {
+  name : 'dil',
+  rating: 4.5,
+  lang: 'telugu'
+}
+]
+
+movies
+(3) [{…}, {…}, {…}]
+0: {name: 'avengers', rating: 3.5, lang: 'english'}lang: "english"name: "avengers"rating: 3.5[[Prototype]]: Object1: {name: 'teal', rating: 3.5, lang: 'english'}2: {name: 'dil', rating: 4.5, lang: 'telugu'}length: 3[[Prototype]]: Array(0)
+
+movies.name
+undefined
+movies[1].rating
+3.5
+movies[0].name
+'avengers'
+
+*****************
+ when a function is assigned to a variable it become method
+ we can call multiple times
+ var calc = {
+   sum:function(a,b) { return a+b }
+   sub: (a,b) => { return a-b }
+}
+undefined
+calc.sum(3,5)
+8
+calc.sub(10,3)
+7
+
+
+var dbquery = {
+  find:(table) => { return `select * from ${table}` }
+}
+
+undefined
+dbquery.find('student')
+'select * from student'
+
+////////// This ///////
+
+this keyword refers to the above scope
+
+var lastName = 'Scott'
+
+var sayHi = {
+  firstName: 'zoe',
+  lastName: 'Lisa',
+  people:function() {
+    return `say hi to ${this.firstName} ${this.lastName}`
+}
+}
+
+console.log(sayHi.people())
+o/p
+
+"say hi to zoe Lisa"
+
+///// defining an object using construtor notation //////
+
+var bob = new Object();  ///object bob is created with no properties
+bob.age = 29 // assigned age property
+obj.setAge=function(newAge){
+  this.age= newAge;
+}
+////
+var createAge = function(newAge) {
+  this.age = newAge
+}
+
+var bob = new Object();
+  bob.age = 29
+  bob.city = 'delhi'
+  bob.setAge = createAge
+
+var tony = new Object();
+  tony.age = 29
+  tony.city = 'delhi'
+  tony.setAge = createAge
+  
+o/p  
+ƒ (newAge) {
+  this.age = newAge
+}
+bob
+{age: 29, city: 'delhi', setAge: ƒ}
+bob.setAge(28)
+undefined
+bob
+{age: 28, city: 'delhi', setAge: ƒ}
+
+//////////////// functions as an object ////////////////
+
+function language(name,country){
+    this.name = name;
+    this.country = country;
+}
+undefined
+
+var hindi = new language('hindi','india') // creating obj using constructor
+undefined
+hindi // hindi is a obj having name and country as a properties
+language {name: 'hindi', country: 'india'}
+
+
+/// in es6 we can do by using classes
+
+
+
