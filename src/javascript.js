@@ -739,3 +739,49 @@ class language {
 var eng = new language('English','USA')
 
 
+//////// prototpyes/////////////
+
+//in es5
+
+function human(name) {    /// one arg as name
+  this.name = name;
+  this.city = 'london';
+}
+
+function robot(name) {. 
+  this.name = name;
+  this.legs = 2;
+  this.color = 'red'
+}
+
+human.prototype = new robot() //acessing the robot properties to the human
+
+var john = new human ('joy')
+robot {name: undefined, legs: 2, color: 'red'}
+
+var chitti = new robot('robo')
+undefined
+chitti
+robot {name: 'robo', legs: 2, color: 'red'}
+john.color /// human can stil access the propeties of robot
+'red'
+john.legs
+2
+
+//// using es6
+
+class geo {
+  constructor(lan.lon) {
+    this.lan = 11.1331;
+    this.lon = 213.242;
+  }
+}
+
+class human extends geo {  ///// we will use extends keyword to inhert the properties from geo
+  constructor(name,country,lan,lon) {  //// we should declare the geo arg in constructor
+    super(lan,lon)  /// to differentiate geo properties we will place in super
+    this.name = name;
+    this.country =country;
+  }
+}
+
