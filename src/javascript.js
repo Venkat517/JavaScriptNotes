@@ -730,5 +730,12 @@ language {name: 'hindi', country: 'india'}
 
 /// in es6 we can do by using classes
 
+class language {
+  constructor(name.country) {
+    this.name = name;
+    this.country = country;
+  }
+}
+var eng = new language('English','USA')
 
 
