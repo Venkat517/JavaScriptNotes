@@ -771,7 +771,7 @@ john.legs
 //// using es6
 
 class geo {
-  constructor(lan.lon) {
+  constructor(lan,lon) {
     this.lan = 11.1331;
     this.lon = 213.242;
   }
