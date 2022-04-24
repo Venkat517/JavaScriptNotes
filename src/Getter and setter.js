@@ -1,4 +1,5 @@
-// Getter - to get the access from the obj
+// Getter - In JS Getter methods are used to acess the properties of the object
+// Setter - In JS Setter methods are used to change the values of an object
 
 const person = {
   firstName : 'Venkata S',
