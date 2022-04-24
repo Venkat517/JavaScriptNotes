@@ -18,3 +18,10 @@ console.log(person.fullName);
 person.fullName = 'Venkata Satyanarayana Bonam'
 console.log(person.firstName);
 console.log(person.fullName);
+
+o/p
+
+Venkata S
+Venkata S Bonam
+Venkata
+Venkata Satyanarayana
