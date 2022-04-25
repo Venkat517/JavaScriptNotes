@@ -25,6 +25,47 @@ const person = {
 console.log(typeof person); // object
 
 
+// JavaScript Object Properties
+
+In JavaScript, "key: value" pairs are called properties. For example,
+
+let person = { 
+    name: 'John',
+    age: 20
+};
+Here, name: 'John' and age: 20 are properties.
+
+// Accessing Object Properties
+
+1. Using dot Notation
+
+objectName.key
+
+const person = { 
+    name: 'John', 
+    age: 20, 
+};
+
+// accessing property
+console.log(person.name); // John
+
+2. Using bracket Notation
+Here is the syntax of the bracket notation.
+
+objectName["propertyName"]
+For example,
+
+const person = { 
+    name: 'John', 
+    age: 20, 
+};
+
+// accessing property
+console.log(person["name"]); // John
+
+
+
+
 // Creating Objects using 3 diff ways
 
 1) Using object literal
