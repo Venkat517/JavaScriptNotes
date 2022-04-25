@@ -64,9 +64,30 @@ const person = {
 console.log(person["name"]); // John
 
 
+// JavaScript Nested Objects
+An object can also contain another object. For example,
+
+// nested object
+const student = { 
+    name: 'John', 
+    age: 20,
+    marks: {
+        science: 70,
+        math: 75
+    }
+}
+
+// accessing property of student object
+console.log(student.marks); // {science: 70, math: 75}
+
+// accessing property of marks object
+console.log(student.marks.science); // 70
+In the above example, an object student contains an object value in the marks property.
 
 
-// Creating Objects using 3 diff ways
+
+
+                                                        // Creating Objects using 3 diff ways
 
 1) Using object literal
 2) By creating instance of Object directly
